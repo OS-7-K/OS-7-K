@@ -17,7 +17,7 @@ LANGUAGES_START_MARKER = "<!-- LANGUAGES:START -->"
 LANGUAGES_END_MARKER = "<!-- LANGUAGES:END -->"
 ALLOWED_LANGUAGES = {
     "Dart": {"color": "00B4D8", "logo": "dart", "logo_color": "white"},
-    "Python": {"color": "7C3AED", "logo": "python", "logo_color": "white"},
+    "Python": {"color": "1E3A8A", "logo": "python", "logo_color": "white"},
 }
 
 
@@ -196,10 +196,7 @@ def build_language_section(repositories, language_cache):
         },
         "options": {
             "plugins": {
-                "legend": {
-                    "position": "bottom",
-                    "labels": {"color": "#ffffff", "font": {"size": 14, "weight": "bold"}},
-                },
+                "legend": {"display": False},
                 "datalabels": {
                     "color": "#ffffff",
                     "font": {"size": 15, "weight": "bold"},
