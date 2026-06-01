@@ -195,6 +195,7 @@ def build_language_section(repositories, language_cache):
             ],
         },
         "options": {
+            "legend": {"display": False},
             "plugins": {
                 "legend": {"display": False},
                 "datalabels": {
