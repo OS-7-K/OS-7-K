@@ -121,13 +121,13 @@ Get pumped for the **Real-Time Fitness Tracker** - a game-changing app built wit
 
 No description yet.
 
-`Dart`  |  Stars: `2`  |  Forks: `0`  |  Updated: `Dec 2025`
+`Flutter`  |  Stars: `2`  |  Forks: `0`  |  Updated: `Dec 2025`
 
 ### [OS-Notes](https://github.com/Osama7amed04/OS-Notes)
 
 Note app
 
-`HTML`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Oct 2025`
+`Flutter`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Oct 2025`
 <!-- REPOS:END -->
 
 ---

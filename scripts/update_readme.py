@@ -85,7 +85,31 @@ def sanitize_text(value):
     return text or "No description yet."
 
 
-def build_repository_section(repositories):
+def get_repository_languages(repo, language_cache):
+    name = repo.get("name", "")
+    if name in language_cache:
+        return language_cache[name]
+
+    languages_url = repo.get("languages_url")
+    if not languages_url:
+        language_cache[name] = {}
+        return {}
+
+    language_cache[name] = fetch_json(languages_url)
+    return language_cache[name]
+
+
+def display_repository_language(repo, languages):
+    if languages.get("Dart", 0) > 0:
+        return "Flutter"
+
+    if languages.get("Python", 0) > 0:
+        return "Python"
+
+    return repo.get("language") or "Code"
+
+
+def build_repository_section(repositories, language_cache):
     filtered = [
         repo
         for repo in repositories
@@ -102,7 +126,8 @@ def build_repository_section(repositories):
         name = repo["name"]
         url = repo["html_url"]
         description = sanitize_text(repo.get("description"))
-        language = repo.get("language") or "Code"
+        languages = get_repository_languages(repo, language_cache)
+        language = display_repository_language(repo, languages)
         stars = repo.get("stargazers_count", 0)
         forks = repo.get("forks_count", 0)
         updated = format_date(repo.get("pushed_at"))
@@ -121,18 +146,14 @@ def build_repository_section(repositories):
     return "\n".join(lines).rstrip()
 
 
-def build_language_section(repositories):
+def build_language_section(repositories, language_cache):
     totals = {language: 0 for language in ALLOWED_LANGUAGES}
 
     for repo in repositories:
         if repo.get("fork") or repo.get("archived") or repo.get("name", "").lower() == USERNAME.lower():
             continue
 
-        languages_url = repo.get("languages_url")
-        if not languages_url:
-            continue
-
-        languages = fetch_json(languages_url)
+        languages = get_repository_languages(repo, language_cache)
         for language, bytes_count in languages.items():
             if language in totals:
                 totals[language] += bytes_count
@@ -222,8 +243,9 @@ def update_readme(repository_section, language_section):
 
 def main():
     repositories = fetch_repositories()
-    repository_section = build_repository_section(repositories)
-    language_section = build_language_section(repositories)
+    language_cache = {}
+    repository_section = build_repository_section(repositories, language_cache)
+    language_section = build_language_section(repositories, language_cache)
     update_readme(repository_section, language_section)
 
 
