@@ -139,9 +139,17 @@ Note app
   <img height="165" src="https://streak-stats.demolab.com?user=Osama7amed04&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
 </p>
 
+### App Languages
+
+<!-- LANGUAGES:START -->
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Osama7amed04&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top languages" />
+  <img src="https://quickchart.io/chart?width=420&height=260&c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Dart%22%2C%22Python%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B59.5%2C40.5%5D%2C%22backgroundColor%22%3A%5B%22%230175C2%22%2C%22%233670A0%22%5D%2C%22borderColor%22%3A%22%230d1117%22%2C%22borderWidth%22%3A2%7D%5D%7D%2C%22options%22%3A%7B%22plugins%22%3A%7B%22legend%22%3A%7B%22position%22%3A%22bottom%22%2C%22labels%22%3A%7B%22color%22%3A%22%23c9d1d9%22%2C%22font%22%3A%7B%22size%22%3A14%7D%7D%7D%7D%7D%7D" alt="Dart and Python language usage chart" />
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Dart-59.5%25-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart 59.5%" /> <img src="https://img.shields.io/badge/Python-40.5%25-3670A0?style=for-the-badge&logo=python&logoColor=white" alt="Python 40.5%" />
+</p>
+<!-- LANGUAGES:END -->
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Osama7amed04&theme=github-compact&hide_border=true" width="100%" alt="GitHub activity graph" />

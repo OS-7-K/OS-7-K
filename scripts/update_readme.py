@@ -3,6 +3,7 @@ import os
 import re
 import sys
 from datetime import datetime
+from urllib.parse import quote
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -12,6 +13,12 @@ README_PATH = os.environ.get("README_PATH", "README.md")
 MAX_REPOS = int(os.environ.get("MAX_REPOS", "6"))
 START_MARKER = "<!-- REPOS:START -->"
 END_MARKER = "<!-- REPOS:END -->"
+LANGUAGES_START_MARKER = "<!-- LANGUAGES:START -->"
+LANGUAGES_END_MARKER = "<!-- LANGUAGES:END -->"
+ALLOWED_LANGUAGES = {
+    "Dart": {"color": "0175C2", "logo": "dart"},
+    "Python": {"color": "3670A0", "logo": "python"},
+}
 
 
 def fetch_repositories():
@@ -32,6 +39,21 @@ def fetch_repositories():
     except (HTTPError, URLError) as error:
         print(f"Failed to fetch repositories: {error}", file=sys.stderr)
         raise
+
+
+def fetch_json(url):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": f"{USERNAME}-profile-readme-updater",
+    }
+
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    request = Request(url, headers=headers)
+    with urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
 
 
 def format_date(value):
@@ -99,16 +121,100 @@ def build_repository_section(repositories):
     return "\n".join(lines).rstrip()
 
 
-def update_readme(section):
+def build_language_section(repositories):
+    totals = {language: 0 for language in ALLOWED_LANGUAGES}
+
+    for repo in repositories:
+        if repo.get("fork") or repo.get("archived") or repo.get("name", "").lower() == USERNAME.lower():
+            continue
+
+        languages_url = repo.get("languages_url")
+        if not languages_url:
+            continue
+
+        languages = fetch_json(languages_url)
+        for language, bytes_count in languages.items():
+            if language in totals:
+                totals[language] += bytes_count
+
+    total_bytes = sum(totals.values())
+    if total_bytes == 0:
+        return "No Dart or Python code detected in public repositories yet."
+
+    labels = []
+    data = []
+    colors = []
+    badges = []
+
+    for language, bytes_count in sorted(totals.items(), key=lambda item: item[1], reverse=True):
+        if bytes_count == 0:
+            continue
+
+        percent = round((bytes_count / total_bytes) * 100, 1)
+        meta = ALLOWED_LANGUAGES[language]
+        labels.append(language)
+        data.append(percent)
+        colors.append(f"#{meta['color']}")
+        badges.append(
+            f'<img src="https://img.shields.io/badge/{language}-{percent}%25-{meta["color"]}'
+            f'?style=for-the-badge&logo={meta["logo"]}&logoColor=white" alt="{language} {percent}%" />'
+        )
+
+    chart_config = {
+        "type": "doughnut",
+        "data": {
+            "labels": labels,
+            "datasets": [
+                {
+                    "data": data,
+                    "backgroundColor": colors,
+                    "borderColor": "#0d1117",
+                    "borderWidth": 2,
+                }
+            ],
+        },
+        "options": {
+            "plugins": {
+                "legend": {
+                    "position": "bottom",
+                    "labels": {"color": "#c9d1d9", "font": {"size": 14}},
+                }
+            }
+        },
+    }
+    chart_url = f"https://quickchart.io/chart?width=420&height=260&c={quote(json.dumps(chart_config, separators=(',', ':')))}"
+
+    return "\n".join(
+        [
+            '<p align="center">',
+            f'  <img src="{chart_url}" alt="Dart and Python language usage chart" />',
+            "</p>",
+            "",
+            '<p align="center">',
+            f"  {' '.join(badges)}",
+            "</p>",
+        ]
+    )
+
+
+def replace_between_markers(readme, start_marker, end_marker, section):
+    if start_marker not in readme or end_marker not in readme:
+        return readme
+
+    before, rest = readme.split(start_marker, 1)
+    _, after = rest.split(end_marker, 1)
+    return f"{before}{start_marker}\n{section}\n{end_marker}{after}"
+
+
+def update_readme(repository_section, language_section):
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
 
     if START_MARKER not in readme or END_MARKER not in readme:
         raise RuntimeError("Repository markers were not found in README.md")
 
-    before, rest = readme.split(START_MARKER, 1)
-    _, after = rest.split(END_MARKER, 1)
-    updated = f"{before}{START_MARKER}\n{section}\n{END_MARKER}{after}"
+    updated = replace_between_markers(readme, START_MARKER, END_MARKER, repository_section)
+    updated = replace_between_markers(updated, LANGUAGES_START_MARKER, LANGUAGES_END_MARKER, language_section)
 
     with open(README_PATH, "w", encoding="utf-8", newline="\n") as file:
         file.write(updated)
@@ -116,8 +222,9 @@ def update_readme(section):
 
 def main():
     repositories = fetch_repositories()
-    section = build_repository_section(repositories)
-    update_readme(section)
+    repository_section = build_repository_section(repositories)
+    language_section = build_language_section(repositories)
+    update_readme(repository_section, language_section)
 
 
 if __name__ == "__main__":
