@@ -135,8 +135,7 @@ Note app
 ## GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Osama7amed04&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="Osama's GitHub stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=Osama7amed04&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
+  <img height="180" src="https://streak-stats.demolab.com?user=Osama7amed04&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
 </p>
 
 ### Language Used
