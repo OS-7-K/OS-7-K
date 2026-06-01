@@ -16,8 +16,8 @@ END_MARKER = "<!-- REPOS:END -->"
 LANGUAGES_START_MARKER = "<!-- LANGUAGES:START -->"
 LANGUAGES_END_MARKER = "<!-- LANGUAGES:END -->"
 ALLOWED_LANGUAGES = {
-    "Dart": {"color": "0175C2", "logo": "dart"},
-    "Python": {"color": "3670A0", "logo": "python"},
+    "Dart": {"color": "00B4D8", "logo": "dart", "logo_color": "white"},
+    "Python": {"color": "F2C94C", "logo": "python", "logo_color": "111111"},
 }
 
 
@@ -157,7 +157,7 @@ def build_language_section(repositories):
         colors.append(f"#{meta['color']}")
         badges.append(
             f'<img src="https://img.shields.io/badge/{language}-{percent}%25-{meta["color"]}'
-            f'?style=for-the-badge&logo={meta["logo"]}&logoColor=white" alt="{language} {percent}%" />'
+            f'?style=for-the-badge&logo={meta["logo"]}&logoColor={meta["logo_color"]}" alt="{language} {percent}%" />'
         )
 
     chart_config = {
