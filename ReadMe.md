@@ -111,6 +111,12 @@ I am a motivated Flutter Developer who enjoys building smooth, user-friendly cro
 ## Latest Repositories
 
 <!-- REPOS:START -->
+### [OS-Notes](https://github.com/Osama7amed04/OS-Notes)
+
+Note app
+
+`Flutter`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Jun 2026`
+
 ### [Real-Time-Fitness-Tracker](https://github.com/Osama7amed04/Real-Time-Fitness-Tracker)
 
 Get pumped for the **Real-Time Fitness Tracker** - a game-changing app built with Python, MediaPipe, and OpenCV that tracks a huge variety of exercises with laser-sharp accuracy! This isn't just about counting reps - it's about nailing perfect form, getting hyped with audio feedback.
@@ -122,12 +128,6 @@ Get pumped for the **Real-Time Fitness Tracker** - a game-changing app built wit
 No description yet.
 
 `Flutter`  |  Stars: `2`  |  Forks: `0`  |  Updated: `Dec 2025`
-
-### [OS-Notes](https://github.com/Osama7amed04/OS-Notes)
-
-Note app
-
-`Flutter`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Oct 2025`
 <!-- REPOS:END -->
 
 ---
@@ -142,11 +142,11 @@ Note app
 
 <!-- LANGUAGES:START -->
 <p align="center">
-  <img src="https://quickchart.io/chart?width=420&height=260&c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Dart%22%2C%22Python%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B59.5%2C40.5%5D%2C%22backgroundColor%22%3A%5B%22%2300B4D8%22%2C%22%23F2C94C%22%5D%2C%22borderColor%22%3A%22%230d1117%22%2C%22borderWidth%22%3A2%7D%5D%7D%2C%22options%22%3A%7B%22plugins%22%3A%7B%22legend%22%3A%7B%22position%22%3A%22bottom%22%2C%22labels%22%3A%7B%22color%22%3A%22%23c9d1d9%22%2C%22font%22%3A%7B%22size%22%3A14%7D%7D%7D%7D%7D%7D" alt="Dart and Python language usage chart" />
+  <img src="https://quickchart.io/chart?width=420&height=260&c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Dart%22%2C%22Python%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B59.5%2C40.5%5D%2C%22backgroundColor%22%3A%5B%22%2300B4D8%22%2C%22%237C3AED%22%5D%2C%22borderColor%22%3A%22%230d1117%22%2C%22borderWidth%22%3A2%7D%5D%7D%2C%22options%22%3A%7B%22plugins%22%3A%7B%22legend%22%3A%7B%22position%22%3A%22bottom%22%2C%22labels%22%3A%7B%22color%22%3A%22%23ffffff%22%2C%22font%22%3A%7B%22size%22%3A14%2C%22weight%22%3A%22bold%22%7D%7D%7D%2C%22datalabels%22%3A%7B%22color%22%3A%22%23ffffff%22%2C%22font%22%3A%7B%22size%22%3A15%2C%22weight%22%3A%22bold%22%7D%7D%7D%7D%7D" alt="Dart and Python language usage chart" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Dart-59.5%25-00B4D8?style=for-the-badge&logo=dart&logoColor=white" alt="Dart 59.5%" /> <img src="https://img.shields.io/badge/Python-40.5%25-F2C94C?style=for-the-badge&logo=python&logoColor=111111" alt="Python 40.5%" />
+  <img src="https://img.shields.io/badge/Dart-59.5%25-00B4D8?style=for-the-badge&logo=dart&logoColor=white" alt="Dart 59.5%" /> <img src="https://img.shields.io/badge/Python-40.5%25-7C3AED?style=for-the-badge&logo=python&logoColor=white" alt="Python 40.5%" />
 </p>
 <!-- LANGUAGES:END -->
 
