@@ -142,7 +142,7 @@ No description yet.
 
 <!-- LANGUAGES:START -->
 <p align="center">
-  <img src="https://quickchart.io/chart?width=420&height=260&c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Dart%22%2C%22Python%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B59.5%2C40.5%5D%2C%22backgroundColor%22%3A%5B%22%2300B4D8%22%2C%22%231E3A8A%22%5D%2C%22borderColor%22%3A%22%230d1117%22%2C%22borderWidth%22%3A2%7D%5D%7D%2C%22options%22%3A%7B%22legend%22%3A%7B%22display%22%3Afalse%7D%2C%22plugins%22%3A%7B%22legend%22%3A%7B%22display%22%3Afalse%7D%2C%22datalabels%22%3A%7B%22color%22%3A%22%23ffffff%22%2C%22font%22%3A%7B%22size%22%3A15%2C%22weight%22%3A%22bold%22%7D%7D%7D%7D%7D" alt="Dart and Python language usage chart" />
+  <img src="https://quickchart.io/chart?width=420&height=260&c=%7B%22type%22%3A%22doughnut%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Dart%22%2C%22Python%22%5D%2C%22datasets%22%3A%5B%7B%22data%22%3A%5B89.5%2C10.5%5D%2C%22backgroundColor%22%3A%5B%22%2300B4D8%22%2C%22%231E3A8A%22%5D%2C%22borderColor%22%3A%22%230d1117%22%2C%22borderWidth%22%3A2%7D%5D%7D%2C%22options%22%3A%7B%22legend%22%3A%7B%22display%22%3Afalse%7D%2C%22plugins%22%3A%7B%22legend%22%3A%7B%22display%22%3Afalse%7D%2C%22datalabels%22%3A%7B%22color%22%3A%22%23ffffff%22%2C%22font%22%3A%7B%22size%22%3A15%2C%22weight%22%3A%22bold%22%7D%7D%7D%7D%7D" alt="Dart and Python language usage chart" />
 </p>
 
 <p align="center">
