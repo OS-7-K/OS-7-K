@@ -135,7 +135,7 @@ No description yet.
 ## GitHub Stats
 
 <p align="center">
-  <img height="180" src="https://streak-stats.demolab.com?username=OS-7-K&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
+  <img height="180" src="https://streak-stats.demolab.com?user=OS-7-K&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
 </p>
 
 ### Language Used
