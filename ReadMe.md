@@ -16,7 +16,7 @@
   <a href="https://os-7-k.web.app">
     <img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=firefox&logoColor=FF7139" alt="Portfolio" />
   </a>
-  <a href="https://linkedin.com/in/o7k">
+  <a href="https://linkedin.com/in/OS-7K">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:Osama.Elkayyal@gmail.com">
@@ -111,19 +111,19 @@ I am a motivated Flutter Developer who enjoys building smooth, user-friendly cro
 ## Latest Repositories
 
 <!-- REPOS:START -->
-### [OS-Notes](https://github.com/Osama7amed04/OS-Notes)
+### [OS-Notes](https://github.com/OS-7-K/OS-Notes)
 
 Note app
 
 `Flutter`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Jun 2026`
 
-### [Real-Time-Fitness-Tracker](https://github.com/Osama7amed04/Real-Time-Fitness-Tracker)
+### [Real-Time-Fitness-Tracker](https://github.com/OS-7-K/Real-Time-Fitness-Tracker)
 
 Get pumped for the **Real-Time Fitness Tracker** - a game-changing app built with Python, MediaPipe, and OpenCV that tracks a huge variety of exercises with laser-sharp accuracy! This isn't just about counting reps - it's about nailing perfect form, getting hyped with audio feedback.
 
 `Python`  |  Stars: `0`  |  Forks: `0`  |  Updated: `May 2026`
 
-### [shopping_list_g2](https://github.com/Osama7amed04/shopping_list_g2)
+### [shopping_list_g2](https://github.com/OS-7-K/shopping_list_g2)
 
 No description yet.
 
@@ -135,7 +135,7 @@ No description yet.
 ## GitHub Stats
 
 <p align="center">
-  <img height="180" src="https://streak-stats.demolab.com?user=Osama7amed04&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
+  <img height="180" src="https://streak-stats.demolab.com?userOS-7-K&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
 </p>
 
 ### Language Used
@@ -151,7 +151,7 @@ No description yet.
 <!-- LANGUAGES:END -->
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Osama7amed04&theme=github-compact&hide_border=true" width="100%" alt="GitHub activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?usernameOS-7-K&theme=github-compact&hide_border=true" width="100%" alt="GitHub activity graph" />
 </p>
 
 ---
