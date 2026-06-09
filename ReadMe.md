@@ -108,30 +108,6 @@ I am a motivated Flutter Developer who enjoys building smooth, user-friendly cro
 
 ---
 
-## Latest Repositories
-
-<!-- REPOS:START -->
-### [OS-Notes](https://github.com/OS-7-K/OS-Notes)
-
-Note app
-
-`Flutter`  |  Stars: `0`  |  Forks: `0`  |  Updated: `Jun 2026`
-
-### [Real-Time-Fitness-Tracker](https://github.com/OS-7-K/Real-Time-Fitness-Tracker)
-
-Get pumped for the **Real-Time Fitness Tracker** - a game-changing app built with Python, MediaPipe, and OpenCV that tracks a huge variety of exercises with laser-sharp accuracy! This isn't just about counting reps - it's about nailing perfect form, getting hyped with audio feedback.
-
-`Python`  |  Stars: `0`  |  Forks: `0`  |  Updated: `May 2026`
-
-### [shopping_list_g2](https://github.com/OS-7-K/shopping_list_g2)
-
-No description yet.
-
-`Flutter`  |  Stars: `2`  |  Forks: `0`  |  Updated: `Dec 2025`
-<!-- REPOS:END -->
-
----
-
 ## GitHub Stats
 
 <p align="center">
