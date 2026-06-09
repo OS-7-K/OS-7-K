@@ -135,7 +135,7 @@ No description yet.
 ## GitHub Stats
 
 <p align="center">
-  <img height="180" src="https://streak-stats.demolab.com?userOS-7-K&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
+  <img height="180" src="https://streak-stats.demolab.com?username=OS-7-K&theme=github-dark-blue&hide_border=true" alt="Osama's GitHub streak" />
 </p>
 
 ### Language Used
@@ -146,16 +146,16 @@ No description yet.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Dart-59.5%25-00B4D8?style=for-the-badge&logo=dart&logoColor=white" alt="Dart 59.5%" /> <img src="https://img.shields.io/badge/Python-40.5%25-1E3A8A?style=for-the-badge&logo=python&logoColor=white" alt="Python 40.5%" />
+  <img src="https://img.shields.io/badge/Dart-89.5%25-00B4D8?style=for-the-badge&logo=dart&logoColor=white" alt="Dart 89.5%" /> <img src="https://img.shields.io/badge/Python-10.5%25-1E3A8A?style=for-the-badge&logo=python&logoColor=white" alt="Python 10.5%" />
 </p>
 <!-- LANGUAGES:END -->
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?usernameOS-7-K&theme=github-compact&hide_border=true" width="100%" alt="GitHub activity graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OS-7-K&theme=github-compact&hide_border=true" width="100%" alt="GitHub activity graph" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Osama7amed04&style=for-the-badge&color=2F81F7" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=OS-7-K&style=for-the-badge&color=2F81F7" alt="Profile views" />
 </p>
