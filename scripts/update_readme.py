@@ -233,9 +233,6 @@ def update_readme(repository_section, language_section):
     with open(README_PATH, "r", encoding="utf-8") as file:
         readme = file.read()
 
-    if START_MARKER not in readme or END_MARKER not in readme:
-        raise RuntimeError("Repository markers were not found in README.md")
-
     updated = replace_between_markers(readme, START_MARKER, END_MARKER, repository_section)
     updated = replace_between_markers(updated, LANGUAGES_START_MARKER, LANGUAGES_END_MARKER, language_section)
 
